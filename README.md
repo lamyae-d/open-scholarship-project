@@ -7,20 +7,26 @@ The data comes from the Metropolitan Museum of Art Open Access dataset (MetObjec
 I downloaded the dataset as a CSV file from the official open access repository.
 
 ## Why I chose this data
-I chose this dataset because it contains structured information about cultural heritage objects and allows filtering by different categories such as culture.
+I chose this dataset because it contains structured information about cultural heritage objects and allows filtering by categories such as culture and year.
 
 ## What I did
+I used Microsoft Excel to explore and process the dataset. The original CSV file was very large and contained many records, which made it difficult to work with directly.
 
-I used Excel to explore the dataset. The original CSV file was very large and contained many records, which made it difficult to work with directly.
+To make the dataset smaller and more manageable, I applied filters in Excel.
 
-To make the dataset smaller and more manageable, I used the filter function in the header row. I filtered the "Culture" column to select only objects labeled "British". This reduced the number of rows and allowed me to focus on a specific subset of the data.
+## Data Filtering
+The dataset was filtered using the following criteria:
+- Culture: British
+- Accession Year: 1909 and 1911
 
-The dataset was in CSV format (comma-separated), and Excel displayed a warning that some features might be lost when saving the file in this format. This highlights a limitation when working with CSV files compared to Excel formats.
+This reduced the dataset size and allowed focusing on a specific subset of the data.
 
+## Data Preparation
+After filtering, the dataset was saved as a new CSV file. Excel displayed a warning that some features may be lost in CSV format, which highlights a limitation of working with CSV files compared to Excel formats.
 
-## What is important to document
-It is important to document:
-- the source of the dataset
-- how the data was obtained
-- the filtering steps applied
-- any limitations or missing information in the dataset
+## Tools Used
+- Microsoft Excel (data filtering and preparation)
+- GitHub (project documentation and sharing)
+
+## Limitations
+The dataset was reduced to a small subset, which may not fully represent the entire collection. A larger dataset could provide more comprehensive insights.
