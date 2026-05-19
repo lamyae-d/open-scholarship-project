@@ -23,12 +23,12 @@ I chose this dataset because it contains rich metadata about cultural heritage o
 
 The dataset is useful for Digital Humanities research because it combines cultural, historical, and institutional metadata in a structured format.
 
-
 ## Research Questions
 
 - How are British cultural heritage objects represented in the Metropolitan Museum dataset?
 - Which metadata fields are most useful for exploring museum collections?
 - What patterns can be identified through object categories, periods, and cultural metadata?
+
 
 ## What I Did
 
@@ -52,6 +52,7 @@ The dataset now includes metadata such as:
 - Period
 - Dynasty
 
+
 ## Workflow
 
 1. Downloaded the Metropolitan Museum Open Access dataset.
@@ -62,6 +63,22 @@ The dataset now includes metadata such as:
 6. Uploaded the processed dataset, notebook, and documentation to GitHub.
 7. Used GitHub Desktop for commits, synchronization, and version control.
 
+
+## Metadata Used
+
+The project uses metadata fields such as:
+
+- Culture
+- Object Name
+- Title
+- Department
+- Accession Year
+- Artist Role
+- Artist Nationality
+- Period
+- Dynasty
+
+These metadata fields help identify patterns in museum collections and support the analysis of cultural heritage objects.
 
 ## Tools Used
 
@@ -77,3 +94,4 @@ The dataset now includes metadata such as:
 - Analyze object categories and periods
 - Create simple visualizations and statistics
 - Continue developing a reproducible research workflow
+- Use Python and Jupyter Notebook for further metadata analysis
