@@ -1,20 +1,44 @@
 # Heritage Data Analysis
 
+## Project Overview
+
+This project explores cultural heritage objects from the Metropolitan Museum of Art Open Access dataset (MetObjects).
+
+The project focuses on the metadata of museum objects and how metadata can be used to explore cultural heritage collections digitally.
+
+
 ## Data Source
-The data comes from the Metropolitan Museum of Art Open Access dataset (MetObjects), which provides publicly available cultural heritage data.
 
-## How I got the data
-I downloaded the dataset as a CSV file from the official open access repository.
+The data comes from the Metropolitan Museum of Art Open Access dataset (MetObjects), which provides publicly available museum collection data.
 
-## Why I chose this data
-I chose this dataset because it contains structured information about cultural heritage objects and allows filtering by categories such as culture and year.
+Source:
+https://github.com/metmuseum/openaccess
 
-## What I did
-I used the Metropolitan Museum of Art Open Access dataset and explored its metadata fields to study cultural heritage objects.
+The dataset was downloaded as a CSV file.
 
-At first, I filtered the dataset mainly by year and culture to reduce the size of the data and make it easier to work with. Later, I realized that filtering too narrowly removed important metadata and limited the possible research directions.
 
-Therefore, I updated the dataset again to keep richer metadata fields available for analysis.
+## Why I Chose This Dataset
+
+I chose this dataset because it contains rich metadata about cultural heritage objects and allows the exploration of museum collections through categories such as culture, object type, period, department, and artist information.
+
+The dataset is useful for Digital Humanities research because it combines cultural, historical, and institutional metadata in a structured format.
+
+
+## Research Questions
+
+- How are British cultural heritage objects represented in the Metropolitan Museum dataset?
+- Which metadata fields are most useful for exploring museum collections?
+- What patterns can be identified through object categories, periods, and cultural metadata?
+
+## What I Did
+
+I explored the Metropolitan Museum dataset using Excel, Jupyter Notebook, GitHub, and GitHub Desktop.
+
+At first, I filtered the dataset mainly by culture and accession years in order to reduce the size of the data and make it easier to work with.
+
+Later, I realized that filtering the dataset too narrowly removed important metadata and limited possible research directions.
+
+Therefore, I updated the dataset again to preserve richer metadata fields for analysis.
 
 The dataset now includes metadata such as:
 
@@ -28,21 +52,28 @@ The dataset now includes metadata such as:
 - Period
 - Dynasty
 
-My next step is to explore themes and patterns in the metadata using Jupyter Notebook and Python.
+## Workflow
 
-## Data Filtering
-The dataset was filtered using the following criteria:
-- Culture: British
-- Accession Year: 1909 and 1911
+1. Downloaded the Metropolitan Museum Open Access dataset.
+2. Opened and explored the CSV dataset in Excel and Jupyter Notebook.
+3. Explored metadata fields such as culture, object name, title, department, period, and artist information.
+4. Initially filtered the dataset to test metadata exploration and reduce file size.
+5. Later restored richer metadata to support broader research questions and analysis.
+6. Uploaded the processed dataset, notebook, and documentation to GitHub.
+7. Used GitHub Desktop for commits, synchronization, and version control.
 
-This reduced the dataset size and allowed focusing on a specific subset of the data.
-
-## Data Preparation
-After filtering, the dataset was saved as a new CSV file. Excel displayed a warning that some features may be lost in CSV format, which highlights a limitation of working with CSV files compared to Excel formats.
 
 ## Tools Used
-- Microsoft Excel (data filtering and preparation)
-- GitHub (project documentation and sharing)
 
-## Limitations
-The dataset was reduced to a small subset, which may not fully represent the entire collection. A larger dataset could provide more comprehensive insights.
+- Microsoft Excel
+- Jupyter Notebook
+- Python
+- GitHub
+- GitHub Desktop
+
+## Next Steps
+
+- Explore metadata patterns in the dataset
+- Analyze object categories and periods
+- Create simple visualizations and statistics
+- Continue developing a reproducible research workflow
