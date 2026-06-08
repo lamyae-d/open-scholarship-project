@@ -5,7 +5,9 @@
 This project explores cultural heritage objects from the Metropolitan Museum of Art Open Access dataset (MetObjects).
 
 The project focuses on the metadata of museum objects and how metadata can be used to explore cultural heritage collections digitally.
+## Aim of the Project
 
+The aim of this project is to explore how cultural heritage metadata can be analysed digitally using Python and Jupyter Notebook. The project also aims to develop a reproducible workflow for metadata analysis and visualisation.
 
 ## Data Source
 
@@ -23,11 +25,10 @@ I chose this dataset because it contains rich metadata about cultural heritage o
 
 The dataset is useful for Digital Humanities research because it combines cultural, historical, and institutional metadata in a structured format.
 
+
 ## Research Questions
 
-- How are British cultural heritage objects represented in the Metropolitan Museum dataset?
-- Which metadata fields are most useful for exploring museum collections?
-- What patterns can be identified through object categories, periods, and cultural metadata?
+What types of British cultural heritage objects are most represented in the Metropolitan Museum dataset?
 
 
 ## What I Did
