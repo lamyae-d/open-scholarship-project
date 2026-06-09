@@ -2,43 +2,39 @@
 
 ## Project Overview
 
-This project explores the representation of French artistic heritage within the Metropolitan Museum of Art Open Access collection. Using museum metadata and digital humanities methods, the project investigates how French cultural heritage is documented, classified, and represented across different museum departments, object categories, and acquisition periods.
+This project investigates the representation of French artistic heritage within the Metropolitan Museum of Art Open Access collection. Using museum metadata and digital humanities methods, the project explores how French cultural heritage is documented, classified, collected, and represented across different museum departments, object categories, artist nationalities, and acquisition periods.
 
-The project was developed as part of the course *Open Scholarship in History and the Humanities: Resources, Tools, and Methods for Research Implementation* and follows the principles of reproducible research using GitHub, Jupyter Notebook, and Python.
-
-
-## Research Question
-
-What aspects of French artistic heritage are most prominently represented in the Metropolitan Museum of Art collection?
-
-Sub-questions:
-
-- Which departments contain the largest number of French heritage objects?
-- Which object classifications are most common?
-- How is French artistic heritage distributed across acquisition years?
-- How does artist nationality contribute to the representation of French heritage?
-- What patterns can be identified through museum metadata?
-# French Artistic Heritage in the Metropolitan Museum Collection
-
-## Project Overview
-
-This project explores the representation of French artistic heritage within the Metropolitan Museum of Art Open Access collection. Using museum metadata and digital humanities methods, the project investigates how French cultural heritage is documented, classified, and represented across different museum departments, object categories, and acquisition periods.
-
-The project was developed as part of the course *Open Scholarship in History and the Humanities: Resources, Tools, and Methods for Research Implementation* and follows the principles of reproducible research using GitHub, Jupyter Notebook, and Python.
+The project was developed as part of the course *Open Scholarship in History and the Humanities: Resources, Tools, and Methods for Research Implementation* and follows principles of open, transparent, and reproducible research using Python, Jupyter Notebook, and GitHub.
 
 ---
 
 ## Research Question
 
+### Main Research Question
+
 What aspects of French artistic heritage are most prominently represented in the Metropolitan Museum of Art collection?
 
-Sub-questions:
+### Sub-Questions
 
-- Which departments contain the largest number of French heritage objects?
-- Which object classifications are most common?
-- How is French artistic heritage distributed across acquisition years?
-- How does artist nationality contribute to the representation of French heritage?
-- What patterns can be identified through museum metadata?
+- Which museum departments contain the largest number of French heritage objects?
+- Which object classifications are most frequently associated with French heritage?
+- How is French heritage represented through culture and artist nationality?
+- During which periods were French heritage objects most actively acquired?
+- What patterns of representation can be identified through museum metadata?
+
+---
+
+## Key Findings
+
+The analysis demonstrates that French artistic heritage occupies a significant position within the Metropolitan Museum collection.
+
+The largest concentrations of French heritage objects are found in the Drawings and Prints department, followed by European Sculpture and Decorative Arts and Photographs. This indicates a strong institutional representation of French visual and graphic arts.
+
+The classification analysis reveals that prints, drawings, and photographs are the most common object categories associated with French heritage. These categories account for a substantial proportion of French-related records in the collection.
+
+The comparison between Culture and Artist Nationality shows that French heritage is represented both through cultural classification and through artists identified as French. Artist nationality appears more frequently than cultural classification, suggesting that artists play a central role in documenting French heritage within the museum.
+
+The accession year analysis reveals distinct acquisition waves rather than a continuous collecting pattern. Several periods show notable increases in acquisitions, indicating moments when French heritage entered the collection at particularly high rates.
 
 ---
 
@@ -48,16 +44,17 @@ Sub-questions:
 
 Metropolitan Museum of Art Open Access Dataset (MetObjects)
 
-Source:
+Dataset Repository:
+
 https://github.com/metmuseum/openaccess
 
 ### Dataset Description
 
-The Metropolitan Museum of Art provides an openly accessible dataset containing information about hundreds of thousands of museum objects. The dataset includes extensive metadata describing artworks, artists, cultures, departments, classifications, accession information, and historical context.
+The Metropolitan Museum of Art Open Access dataset provides publicly available metadata for hundreds of thousands of museum objects. The dataset contains information about artworks, artists, cultures, departments, classifications, historical periods, and acquisition records.
 
 The dataset was downloaded as a CSV file and analyzed using Python and Jupyter Notebook.
 
-File used:
+### Data File
 
 - MetObjects.csv
 
@@ -65,41 +62,33 @@ File used:
 
 ## Why This Dataset
 
-This dataset was selected because it provides rich and well-structured metadata suitable for cultural heritage research.
+This dataset was selected because it provides extensive metadata suitable for cultural heritage research and digital humanities analysis.
 
-The collection allows researchers to explore museum objects through multiple dimensions, including:
+The collection allows researchers to investigate museum objects through multiple dimensions, including cultural affiliation, artist information, object classification, departmental organization, historical period, and acquisition history.
 
-- Culture
-- Artist nationality
-- Department
-- Classification
-- Historical period
-- Accession information
-
-The dataset is particularly valuable for Digital Humanities research because it combines cultural, historical, and institutional information in a machine-readable format suitable for computational analysis.
+The dataset is particularly valuable because it combines cultural, historical, and institutional information in a structured and machine-readable format that supports computational analysis.
 
 ---
 
 ## Analytical Approach
 
-The project uses museum metadata as a source for investigating patterns of cultural representation.
+This project uses museum metadata as a source for investigating patterns of cultural representation.
 
-The analysis focuses on the following metadata dimensions:
+The analysis focuses on how French artistic heritage is represented through metadata fields that describe:
 
-- Culture
-- Artist Nationality
-- Department
-- Classification
-- Object Name
-- Accession Year
+- Cultural identity
+- Artist identity
+- Institutional categorization
+- Object classification
+- Acquisition history
 
-These variables were selected because they provide insights into how French heritage is represented within the museum collection and how institutional collecting practices have evolved over time.
+The project combines exploratory data analysis, descriptive statistics, and visualization techniques to identify patterns within the collection.
 
 ---
 
 ## Metadata Used
 
-The following metadata fields were selected for analysis:
+The following metadata variables were selected for analysis:
 
 - Culture
 - Artist Nationality
@@ -112,7 +101,7 @@ The following metadata fields were selected for analysis:
 - Dynasty
 - Artist Role
 
-These metadata fields support the identification of cultural, historical, and institutional patterns within the collection.
+These variables provide insights into cultural, historical, and institutional dimensions of French heritage representation.
 
 ---
 
@@ -122,406 +111,121 @@ These metadata fields support the identification of cultural, historical, and in
 
 - Downloaded the Metropolitan Museum Open Access Dataset.
 - Stored the dataset locally.
-- Loaded the dataset into Jupyter Notebook using Pandas.
-- Conducted an initial inspection of dataset structure and metadata fields.
+- Imported the dataset into Jupyter Notebook using Pandas.
+- Conducted an initial inspection of dataset structure and available metadata.
 
 ### 2. Data Inspection
 
 - Examined dataset dimensions.
-- Reviewed column names and metadata availability.
-- Explored sample records.
-- Identified relevant variables for research purposes.
+- Reviewed metadata fields.
+- Displayed sample records.
+- Identified variables relevant to the research question.
 
-### 3. Selection and Sampling
+### 3. Data Selection
 
 - Focused on records associated with French heritage.
-- Selected metadata variables relevant to the research question.
-- Reduced the dataset to a manageable subset while preserving important contextual information.
+- Selected metadata fields relevant to cultural heritage analysis.
+- Reduced the dataset to a research-specific subset.
 
 ### 4. Data Cleaning
 
 - Checked for missing values.
+- Evaluated metadata completeness.
 - Inspected metadata consistency.
-- Removed unnecessary fields.
-- Standardized selected metadata where appropriate.
+- Prepared selected variables for analysis.
 
-### 5. Analysis
+### 5. Exploratory Analysis
 
-The analysis explored:
+The following analyses were conducted:
 
-#### Culture Analysis
+#### Culture Distribution
 
-- Frequency of French cultural representation.
+Examined the frequency of cultural classifications within the dataset and identified the representation of French culture.
 
-#### Department Analysis
+#### Department Distribution
 
-- Distribution of French heritage objects across museum departments.
+Investigated which museum departments contain the largest numbers of French heritage objects.
 
-#### Classification Analysis
+#### Classification Distribution
 
-- Distribution of object types and classifications.
+Analyzed the most common object classifications associated with French heritage.
 
 #### Artist Nationality Analysis
 
-- Representation of French artists within the collection.
+Explored the role of French artists in the collection and compared nationality-based representation with culture-based representation.
 
 #### Accession Year Analysis
 
-- Temporal distribution of acquisitions.
-- Identification of acquisition peaks and collecting trends.
+Investigated temporal acquisition patterns and identified periods of intensified collecting activity.
 
 ### 6. Visualisation
 
-Visualisations were created to support interpretation of the results.
+Visualizations were created to support interpretation and communication of findings.
 
 These include:
 
-- Bar charts
 - Frequency distributions
-- Comparative visualisations
-- Temporal trend analysis
+- Bar charts
+- Comparative visualizations
+- Temporal trend visualizations
 
-### 7. Documentation
+### 7. Interpretation
 
-The research process was documented throughout the project using:
+The results were interpreted within the context of cultural heritage representation and museum collecting practices.
 
-- Markdown cells in Jupyter Notebook
-- GitHub repository documentation
-- Version control through GitHub Desktop
+Patterns identified through metadata were used to answer the research question and evaluate the representation of French heritage within the collection.
 
-### 8. Reproducibility
+### 8. Documentation
 
-The workflow was designed to be reproducible.
+All stages of the research process were documented within the Jupyter Notebook and GitHub repository.
 
-All major steps are documented and can be re-executed using the provided notebook and dataset.
+### 9. Reproducibility
 
----
+The workflow was designed to be reproducible and transparent.
 
-## Main Findings
+The notebook contains all code, analysis steps, visualizations, and interpretations necessary to reproduce the results.
 
-### Department Representation
 
-The analysis revealed that French heritage objects are concentrated in a limited number of museum departments.
+## Analysis Summary
 
-Departments such as:
+### Culture Analysis
+
+The culture analysis identified French culture as one of the most frequently represented cultural categories within the collection.
+
+### Department Analysis
+
+French heritage objects are concentrated in a relatively small number of departments, particularly:
 
 - Drawings and Prints
 - European Sculpture and Decorative Arts
 - Photographs
+- Costume Institute
 
-contain a substantial proportion of French-related objects.
+This suggests that French heritage is especially represented through visual, decorative, and graphic arts.
 
-This indicates a strong institutional emphasis on specific forms of French artistic production.
+### Classification Analysis
 
-### Classification Representation
-
-Several classifications appear more frequently than others.
-
-Common categories include:
+The classification analysis revealed that the most common object categories include:
 
 - Prints
 - Drawings
 - Photographs
 - Textiles
-- Decorative Arts
+- Decorative arts
 
-These categories dominate the representation of French heritage within the collection.
+These categories dominate the museum's representation of French artistic heritage.
 
-### Artist Nationality
+### Culture and Artist Nationality Comparison
 
-The analysis suggests that artist nationality provides an important indicator of French artistic heritage.
+The comparison between Culture and Artist Nationality showed that French heritage is represented through both cultural classification and artist identity.
 
-French artists are represented across multiple departments and classifications, demonstrating the broad influence of French artistic production.
+The larger number of records associated with French artists suggests that artist nationality is a particularly important dimension of French heritage representation within the collection.
 
-### Accession Year Patterns
+### Accession Year Analysis
 
-The accession year analysis shows that museum acquisitions occurred in distinct waves rather than at a constant rate.
+The accession year analysis revealed several acquisition peaks across the twentieth and early twenty-first centuries.
 
-Several acquisition peaks can be observed throughout the twentieth and early twenty-first centuries, suggesting periods of intensified collecting activity.
-
----
-
-## Limitations
-
-Several limitations should be considered when interpreting the results:
-
-- Museum metadata may contain missing values.
-- Nationality information is not always complete.
-- Cultural classifications depend on museum cataloguing practices.
-- Metadata representation may not fully capture the complexity of cultural heritage.
-- Results are limited to objects included in the Metropolitan Museum Open Access collection.
-
----
-
-## Potential Metadata Enrichment
-
-Future work could expand the project through metadata enrichment.
-
-Possible enhancements include:
-
-- Linking artist records with Wikidata.
-- Connecting objects to external cultural heritage repositories.
-- Integrating geographical information.
-- Incorporating historical event data.
-- Exploring relationships between artists, movements, and institutions.
-
-Such enrichment would allow more complex analyses of cultural heritage networks and historical contexts.
-
----
-
-## Repository Structure
-
-project/
-
-├── data/
-
-│   └── MetObjects.csv
-
-│
-
-├── notebooks/
-
-│   └── heritage_data_analysis.ipynb
-
-│
-
-└── README.md
-
----
-
-## Tools Used
-
-- Python
-- Pandas
-- Matplotlib
-- Jupyter Notebook
-- GitHub
-- GitHub Desktop
-- Microsoft Excel
-
----
-
-## Reproducibility Statement
-
-This project follows the principles of open and reproducible research.
-
-All data processing, analysis, and visualisation steps are documented within the Jupyter Notebook. The workflow can be reproduced by loading the dataset and executing the notebook from beginning to end.
-
-Version control was maintained through GitHub to ensure transparency and traceability of changes throughout the project.
-
----
-
-## Future Work
-
-Future development of this project could include:
-
-- More advanced statistical analysis.
-- Metadata enrichment through linked open data.
-- Network analysis of artists and institutions.
-- Geographic visualisations.
-- Comparative studies of multiple cultural groups.
-- Interactive visualisations for public exploration.
-
----
-
-## Conclusion
-
-This project demonstrates how museum metadata can be used to investigate cultural heritage through computational methods.
-
-By focusing on French artistic heritage within the Metropolitan Museum of Art collection, the analysis reveals patterns of cultural representation across departments, object classifications, artist nationalities, and acquisition periods. The project also highlights the value of open museum data, reproducible workflows, and digital humanities methodologies for cultural heritage research.
-
-## Dataset
-
-### Source
-
-Metropolitan Museum of Art Open Access Dataset (MetObjects)
-
-Source:
-https://github.com/metmuseum/openaccess
-
-### Dataset Description
-
-The Metropolitan Museum of Art provides an openly accessible dataset containing information about hundreds of thousands of museum objects. The dataset includes extensive metadata describing artworks, artists, cultures, departments, classifications, accession information, and historical context.
-
-The dataset was downloaded as a CSV file and analyzed using Python and Jupyter Notebook.
-
-File used:
-
-- MetObjects.csv
-
-
-## Why This Dataset
-
-This dataset was selected because it provides rich and well-structured metadata suitable for cultural heritage research.
-
-The collection allows researchers to explore museum objects through multiple dimensions, including:
-
-- Culture
-- Artist nationality
-- Department
-- Classification
-- Historical period
-- Accession information
-
-The dataset is particularly valuable for Digital Humanities research because it combines cultural, historical, and institutional information in a machine-readable format suitable for computational analysis.
-
-
-## Analytical Approach
-
-The project uses museum metadata as a source for investigating patterns of cultural representation.
-
-The analysis focuses on the following metadata dimensions:
-
-- Culture
-- Artist Nationality
-- Department
-- Classification
-- Object Name
-- Accession Year
-
-These variables were selected because they provide insights into how French heritage is represented within the museum collection and how institutional collecting practices have evolved over time.
-
-
-## Metadata Used
-
-The following metadata fields were selected for analysis:
-
-- Culture
-- Artist Nationality
-- Department
-- Classification
-- Object Name
-- Title
-- AccessionYear
-- Period
-- Dynasty
-- Artist Role
-
-These metadata fields support the identification of cultural, historical, and institutional patterns within the collection.
-
-
-## Workflow
-
-### 1. Data Access
-
-- Downloaded the Metropolitan Museum Open Access Dataset.
-- Stored the dataset locally.
-- Loaded the dataset into Jupyter Notebook using Pandas.
-- Conducted an initial inspection of dataset structure and metadata fields.
-
-### 2. Data Inspection
-
-- Examined dataset dimensions.
-- Reviewed column names and metadata availability.
-- Explored sample records.
-- Identified relevant variables for research purposes.
-
-### 3. Selection and Sampling
-
-- Focused on records associated with French heritage.
-- Selected metadata variables relevant to the research question.
-- Reduced the dataset to a manageable subset while preserving important contextual information.
-
-### 4. Data Cleaning
-
-- Checked for missing values.
-- Inspected metadata consistency.
-- Removed unnecessary fields.
-- Standardized selected metadata where appropriate.
-
-### 5. Analysis
-
-The analysis explored:
-
-#### Culture Analysis
-
-- Frequency of French cultural representation.
-
-#### Department Analysis
-
-- Distribution of French heritage objects across museum departments.
-
-#### Classification Analysis
-
-- Distribution of object types and classifications.
-
-#### Artist Nationality Analysis
-
-- Representation of French artists within the collection.
-
-#### Accession Year Analysis
-
-- Temporal distribution of acquisitions.
-- Identification of acquisition peaks and collecting trends.
-
-### 6. Visualisation
-
-Visualisations were created to support interpretation of the results.
-
-These include:
-
-- Bar charts
-- Frequency distributions
-- Comparative visualisations
-- Temporal trend analysis
-
-### 7. Documentation
-
-The research process was documented throughout the project using:
-
-- Markdown cells in Jupyter Notebook
-- GitHub repository documentation
-- Version control through GitHub Desktop
-
-### 8. Reproducibility
-
-The workflow was designed to be reproducible.
-
-All major steps are documented and can be re-executed using the provided notebook and dataset.
-
-
-## Main Findings
-
-### Department Representation
-
-The analysis revealed that French heritage objects are concentrated in a limited number of museum departments.
-
-Departments such as:
-
-- Drawings and Prints
-- European Sculpture and Decorative Arts
-- Photographs
-
-contain a substantial proportion of French-related objects.
-
-This indicates a strong institutional emphasis on specific forms of French artistic production.
-
-### Classification Representation
-
-Several classifications appear more frequently than others.
-
-Common categories include:
-
-- Prints
-- Drawings
-- Photographs
-- Textiles
-- Decorative Arts
-
-These categories dominate the representation of French heritage within the collection.
-
-### Artist Nationality
-
-The analysis suggests that artist nationality provides an important indicator of French artistic heritage.
-
-French artists are represented across multiple departments and classifications, demonstrating the broad influence of French artistic production.
-
-### Accession Year Patterns
-
-The accession year analysis shows that museum acquisitions occurred in distinct waves rather than at a constant rate.
-
-Several acquisition peaks can be observed throughout the twentieth and early twenty-first centuries, suggesting periods of intensified collecting activity.
-
+These peaks indicate periods during which French heritage objects entered the collection at increased rates, reflecting changing museum collecting priorities and acquisition opportunities.
 
 
 ## Limitations
@@ -529,46 +233,43 @@ Several acquisition peaks can be observed throughout the twentieth and early twe
 Several limitations should be considered when interpreting the results:
 
 - Museum metadata may contain missing values.
-- Nationality information is not always complete.
-- Cultural classifications depend on museum cataloguing practices.
-- Metadata representation may not fully capture the complexity of cultural heritage.
-- Results are limited to objects included in the Metropolitan Museum Open Access collection.
+- Artist nationality information is not always complete.
+- Cultural classifications depend on institutional cataloguing decisions.
+- Metadata cannot fully capture the complexity of cultural identity.
+- Results are limited to objects available within the Metropolitan Museum Open Access collection.
+- The analysis relies on metadata rather than direct examination of objects.
 
 
-## Potential Metadata Enrichment
+## Potential Metadata Enhancement
 
-Future work could expand the project through metadata enrichment.
+Future work could improve the dataset through metadata enrichment.
 
 Possible enhancements include:
 
 - Linking artist records with Wikidata.
 - Connecting objects to external cultural heritage repositories.
 - Integrating geographical information.
-- Incorporating historical event data.
-- Exploring relationships between artists, movements, and institutions.
+- Adding information about artistic movements.
+- Incorporating historical and biographical data.
 
-Such enrichment would allow more complex analyses of cultural heritage networks and historical contexts.
-
+Such enrichment would support more advanced cultural heritage analysis and provide broader historical context.
 
 
 ## Repository Structure
 
 project/
 
-├── data/
+├── Data/
 
 │   └── MetObjects.csv
 
 │
 
-├── notebooks/
-
-│   └── heritage_data_analysis.ipynb
+├── heritage_data_analysis.ipynb
 
 │
 
 └── README.md
-
 
 
 ## Tools Used
@@ -582,30 +283,31 @@ project/
 - Microsoft Excel
 
 
-
 ## Reproducibility Statement
 
 This project follows the principles of open and reproducible research.
 
-All data processing, analysis, and visualisation steps are documented within the Jupyter Notebook. The workflow can be reproduced by loading the dataset and executing the notebook from beginning to end.
+All data processing, analysis, visualization, and interpretation steps are documented within the Jupyter Notebook. The workflow can be reproduced by loading the dataset and executing the notebook from beginning to end.
 
-Version control was maintained through GitHub to ensure transparency and traceability of changes throughout the project.
+Version control was maintained through GitHub and GitHub Desktop to ensure transparency and traceability of project development.
 
 
 ## Future Work
 
-Future development of this project could include:
+Future extensions of this project may include:
 
-- More advanced statistical analysis.
-- Metadata enrichment through linked open data.
+- Advanced statistical analysis.
+- Metadata enrichment using linked open data.
 - Network analysis of artists and institutions.
-- Geographic visualisations.
+- Geographic visualizations.
 - Comparative studies of multiple cultural groups.
-- Interactive visualisations for public exploration.
+- Interactive visualizations for public exploration.
 
 
 ## Conclusion
 
-This project demonstrates how museum metadata can be used to investigate cultural heritage through computational methods.
+This project demonstrates how museum metadata can be used to investigate cultural heritage through computational and digital humanities methods.
 
-By focusing on French artistic heritage within the Metropolitan Museum of Art collection, the analysis reveals patterns of cultural representation across departments, object classifications, artist nationalities, and acquisition periods. The project also highlights the value of open museum data, reproducible workflows, and digital humanities methodologies for cultural heritage research.
+By focusing on French artistic heritage within the Metropolitan Museum of Art collection, the analysis identifies patterns of representation across cultural classifications, artist nationalities, museum departments, object classifications, and acquisition periods.
+
+The results show that French heritage occupies a prominent position within the collection and that metadata analysis provides valuable insights into museum collecting practices and cultural representation. The project also highlights the importance of open data, reproducible workflows, and transparent research methods for cultural heritage studies.
