@@ -6,7 +6,6 @@ This project investigates the representation of French artistic heritage within 
 
 The project was developed as part of the course *Open Scholarship in History and the Humanities: Resources, Tools, and Methods for Research Implementation* and follows principles of open, transparent, and reproducible research using Python, Jupyter Notebook, and GitHub.
 
----
 
 ## Research Question
 
@@ -22,8 +21,6 @@ What aspects of French artistic heritage are most prominently represented in the
 - During which periods were French heritage objects most actively acquired?
 - What patterns of representation can be identified through museum metadata?
 
----
-
 ## Key Findings
 
 The analysis demonstrates that French artistic heritage occupies a significant position within the Metropolitan Museum collection.
@@ -36,7 +33,6 @@ The comparison between Culture and Artist Nationality shows that French heritage
 
 The accession year analysis reveals distinct acquisition waves rather than a continuous collecting pattern. Several periods show notable increases in acquisitions, indicating moments when French heritage entered the collection at particularly high rates.
 
----
 
 ## Dataset
 
@@ -58,7 +54,6 @@ The dataset was downloaded as a CSV file and analyzed using Python and Jupyter N
 
 - MetObjects.csv
 
----
 
 ## Why This Dataset
 
@@ -68,7 +63,6 @@ The collection allows researchers to investigate museum objects through multiple
 
 The dataset is particularly valuable because it combines cultural, historical, and institutional information in a structured and machine-readable format that supports computational analysis.
 
----
 
 ## Analytical Approach
 
@@ -84,7 +78,6 @@ The analysis focuses on how French artistic heritage is represented through meta
 
 The project combines exploratory data analysis, descriptive statistics, and visualization techniques to identify patterns within the collection.
 
----
 
 ## Metadata Used
 
@@ -103,7 +96,6 @@ The following metadata variables were selected for analysis:
 
 These variables provide insights into cultural, historical, and institutional dimensions of French heritage representation.
 
----
 
 ## Workflow
 
