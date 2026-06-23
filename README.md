@@ -9,15 +9,36 @@ The project was developed as part of the course *Open Scholarship in History and
 ## Research Question
 
 What aspects of French artistic heritage are most prominently represented in the Metropolitan Museum of Art collection?
+
 ## Visualizations
-![Department Distribution](./notebooks/department_distribution.png)
+Department Distribution
+![](./notebooks/department_distribution.png)
 
-![Classification Distribution](./notebooks/classification_distribution.png)
+Classification Distribution
+![](./notebooks/classification_distribution.png)
 
-![Culture and Artist Comparison](./notebooks/culture_artist_comparison.png)
+Culture and Artist Comparison
+![](./notebooks/culture_artist_comparison.png)
 
-![French Heritage Identification](./notebooks/french_heritage_identification.png)
+French Heritage Identification
+![](./notebooks/french_heritage_identification.png)
 
+Accession Year Analysis
+
+![](./notebooks/accession_year_analysis.png)
+The visualisations were designed to answer different aspects of the research question.
+
+Department Distribution of French Heritage Objects – identifies the museum departments in which French heritage is most strongly represented.
+
+Classification Distribution of French Heritage Objects – identifies the most common object types associated with French heritage.
+
+French Heritage Identification (Culture vs Artist Nationality) – compares metadata fields used to identify French heritage objects.
+
+Culture and Artist Nationality Comparison – examines the relative representation of French heritage through cultural classification and artist nationality metadata.
+
+Accession Year Analysis – explores patterns in the acquisition of French heritage objects over time.
+
+Together, these visualisations provide insight into where French heritage is represented, how it is classified, how it is identified through metadata, and when objects entered the museum collection.
 ## Open Scholarship and Licensing
 
 This project uses the Metropolitan Museum of Art Open Access Dataset.
@@ -84,18 +105,12 @@ Frequency distributions, comparisons, and visualisations were used to investigat
 | GitHub Desktop   | Repository management                           |
 | Microsoft Excel  | Initial data inspection                         |
 
-## Visualisations
-
-The project includes four main visualisations:
-
-* Department Distribution of French Heritage Objects
-* Classification Distribution of French Heritage Objects
-* French Heritage Identification (Culture vs Artist Nationality)
-* Accession Year Analysis
-
-All visualisations are documented within the Jupyter Notebook.
 
 ## Key Findings
+
+### Key Functions Used
+
+The analysis primarily relies on pandas functions such as read_csv(), value_counts(), filtering operations, and missing value inspection to explore and prepare the dataset. Matplotlib was used to create visualisations of department distributions, classification distributions, metadata comparisons, and accession year patterns. These functions enabled the identification and interpretation of trends within the museum metadata.
 
 ### Department Analysis
 
@@ -140,6 +155,12 @@ This project follows the FAIR principles for research data:
 
 **Reusable** – Open licensing and detailed workflow documentation support future reuse.
 
+## Peer Review and Testing
+
+The repository and Jupyter Notebook were reviewed from the perspective of a new user to evaluate the clarity of documentation, workflow transparency, and reproducibility. Particular attention was given to whether the research question, data source, analytical workflow, and visualisations could be understood without additional explanation.
+
+The review confirmed that the workflow can be followed through the README and notebook documentation. The repository structure, code organisation, and visualisations support the reproducibility of the analysis.
+
 ## Reproducibility
 
 All stages of the research process are documented within the Jupyter Notebook. The notebook contains the complete workflow, code, visualisations, interpretations, and conclusions necessary to reproduce the analysis.
@@ -159,6 +180,10 @@ open-scholarship-project/
 │
 └── README.md
 
+
+## Documentation Decisions
+
+Several documentation decisions were made during the project to improve transparency and reproducibility. The workflow, analytical steps, interpretations, and visualisations were documented directly within the Jupyter Notebook. Repository organisation and version control were maintained through GitHub and GitHub Desktop to support traceability and future reuse of the project.
 
 ## AI-Assisted Development
 
