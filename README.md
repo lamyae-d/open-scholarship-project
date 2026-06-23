@@ -15,13 +15,12 @@ What aspects of French artistic heritage are most prominently represented in the
 
 ![Department Distribution](notebooks/figures/department_distribution.png)
 
-### Classification Distribution
-
 ![Classification Distribution](notebooks/figures/classification_distribution.png)
 
-### Culture and Artist Nationality Comparison
+![Culture and Artist Nationality Comparison](notebooks/figures/culture_artist_nationality_comparison.png)
 
-![Culture and Artist Nationality Comparison](notebooks/figures/culture_artist_comparison.png)
+![Accession Year Analysis](notebooks/figures/accession_year_analysis.png)
+
 
 ### Accession Year Analysis
 
