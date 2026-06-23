@@ -167,7 +167,6 @@ All stages of the research process are documented within the Jupyter Notebook. T
 
 Version control was maintained through GitHub and GitHub Desktop to ensure transparency and traceability of project development.
 
-## Repository Structure
 
 ## Repository Structure
 
@@ -176,13 +175,14 @@ open-scholarship-project/
 ├── Data/
 │
 ├── notebooks/
-│   ├── heritage_data_analysis.ipynb
-│   ├── department_distribution.png
-│   ├── classification_distribution.png
-│   ├── culture_artist_comparison.png
-│   └── french_heritage_identification.png
-│
-├── figures/
+│   ├── figures/
+│   │   ├── accession_year_analysis.png
+│   │   ├── classification_distribution.png
+│   │   ├── culture_artist_comparison.png
+│   │   ├── department_distribution.png
+│   │   └── french_heritage_identification.png
+│   │
+│   └── heritage_data_analysis.ipynb
 │
 └── README.md
 
