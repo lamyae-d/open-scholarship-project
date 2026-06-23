@@ -22,10 +22,15 @@ The dataset is distributed under the CC0 (Creative Commons Zero) licence, allowi
 
 ## Dataset
 
-### Source
+### Sources
 
 Metropolitan Museum of Art Open Access Dataset (MetObjects.csv)
 
+- Metropolitan Museum of Art Open Access Dataset:
+  https://github.com/metmuseum/openaccess
+
+- Metropolitan Museum of Art Open Access Initiative:
+  https://www.metmuseum.org/about-the-met/policies-and-documents/open-access
 ### Selected Metadata Variables
 
 * Culture
@@ -135,18 +140,21 @@ Version control was maintained through GitHub and GitHub Desktop to ensure trans
 
 ## Repository Structure
 
-project/
-
+open-scholarship-project/
+│
 ├── Data/
-
+│
 ├── notebooks/
-
-│   ├── heritage_data_analysis.ipynb
-
-│   └── figures/
-
+│   └── heritage_data_analysis.ipynb
+│
+├── figures/
+│
 └── README.md
 
+
+## AI-Assisted Development
+
+ChatGPT was used as a supplementary learning and troubleshooting tool during the development of this project, particularly for Python programming, GitHub workflow, and documentation support.
 ## Limitations
 
 Several limitations should be considered when interpreting the results:
