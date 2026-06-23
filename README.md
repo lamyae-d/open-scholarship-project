@@ -9,7 +9,23 @@ The project was developed as part of the course *Open Scholarship in History and
 ## Research Question
 
 What aspects of French artistic heritage are most prominently represented in the Metropolitan Museum of Art collection?
+## Visualizations
 
+### Department Distribution
+
+![Department Distribution](notebooks/figures/department_distribution.png)
+
+### Classification Distribution
+
+![Classification Distribution](notebooks/figures/classification_distribution.png)
+
+### Culture and Artist Nationality Comparison
+
+![Culture and Artist Nationality Comparison](notebooks/figures/culture_artist_comparison.png)
+
+### Accession Year Analysis
+
+![Accession Year Analysis](notebooks/figures/french_heritage_accession_year.png)
 ## Open Scholarship and Licensing
 
 This project uses the Metropolitan Museum of Art Open Access Dataset.
