@@ -10,15 +10,13 @@ The project was developed as part of the course *Open Scholarship in History and
 
 What aspects of French artistic heritage are most prominently represented in the Metropolitan Museum of Art collection?
 ## Visualizations
+![Department Distribution](./notebooks/figures/department_distribution.png)
 
+![Classification Distribution](./notebooks/figures/classification_distribution.png)
 
-![Department Distribution](notebooks/figures/department_distribution.png)
+![Culture and Artist Nationality Comparison](./notebooks/figures/culture_artist_comparison.png)
 
-![Classification Distribution](notebooks/figures/classification_distribution.png)
-
-![Culture and Artist Nationality Comparison](notebooks/figures/culture_artist_comparison.png)
-
-![French Heritage Identification](notebooks/figures/french_heritage_identification.png)
+![French Heritage Identification](./notebooks/figures/french_heritage_identification.png)
 
 ## Open Scholarship and Licensing
 
