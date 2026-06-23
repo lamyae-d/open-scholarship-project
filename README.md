@@ -21,10 +21,6 @@ What aspects of French artistic heritage are most prominently represented in the
 
 ![Accession Year Analysis](notebooks/figures/accession_year_analysis.png)
 
-
-### Accession Year Analysis
-
-![Accession Year Analysis](notebooks/figures/french_heritage_accession_year.png)
 ## Open Scholarship and Licensing
 
 This project uses the Metropolitan Museum of Art Open Access Dataset.
