@@ -1,5 +1,5 @@
 # French Artistic Heritage in the Metropolitan Museum Collection
-## Key Findings
+
 ## Project Overview
 
 This project investigates how French artistic heritage is represented within the Metropolitan Museum of Art Open Access collection. It uses museum metadata and digital humanities methods to examine patterns across cultural classifications, artist nationalities, museum departments, object classifications, and accession years.
@@ -27,6 +27,8 @@ The original `MetObjects.csv` file is not included in this repository because it
 | Jupyter Notebook | Combining code, results, and documentation |
 | GitHub and GitHub Desktop | Repository management and version control |
 | Microsoft Excel | Initial data inspection |
+
+## Key Findings
 
 ### How French Heritage Objects Were Identified
 
