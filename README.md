@@ -1,7 +1,33 @@
-ository management                           |
-| Microsoft Excel  | Initial data inspection                         |
-
+# French Artistic Heritage in the Metropolitan Museum Collection
 ## Key Findings
+## Project Overview
+
+This project investigates how French artistic heritage is represented within the Metropolitan Museum of Art Open Access collection. It uses museum metadata and digital humanities methods to examine patterns across cultural classifications, artist nationalities, museum departments, object classifications, and accession years.
+
+## Research Question
+
+**What aspects of French artistic heritage are most prominently represented in the Metropolitan Museum of Art collection?**
+
+## Dataset Source and Licensing
+
+The original data comes from the [Metropolitan Museum of Art Open Access repository](https://github.com/metmuseum/openaccess). The Met makes its Open Access data available under the Creative Commons Zero (CC0) public-domain dedication, supporting reuse, analysis, and redistribution.
+
+The original `MetObjects.csv` file is not included in this repository because it exceeds GitHub’s file-size limit. The filtered data used for this project is available here:
+
+- [Filtered French heritage dataset](https://github.com/lamyae-d/open-scholarship-project/blob/main/Data/french_heritage_objects.csv)
+- [Jupyter Notebook](https://github.com/lamyae-d/open-scholarship-project/blob/main/notebooks/heritage_data_analysis.ipynb)
+
+## Tools Used
+
+| Tool | Purpose |
+|---|---|
+| Python | Data processing and analysis |
+| pandas | Loading, filtering, and analysing metadata |
+| Matplotlib | Creating visualisations |
+| Jupyter Notebook | Combining code, results, and documentation |
+| GitHub and GitHub Desktop | Repository management and version control |
+| Microsoft Excel | Initial data inspection |
+
 ### How French Heritage Objects Were Identified
 
 Step 6 above (filtering) selects any record where either the Culture field equals "French" or the Artist Nationality field equals "French":
