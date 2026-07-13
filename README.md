@@ -1,5 +1,3 @@
-ository management                           |
-| Microsoft Excel  | Initial data inspection                         |
 
 ## Key Findings
 ### How French Heritage Objects Were Identified
