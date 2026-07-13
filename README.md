@@ -116,6 +116,7 @@ Several limitations should be considered when interpreting the results:
 - Cultural classifications depend on institutional cataloguing practices.
 - The analysis is limited to objects contained within the Metropolitan Museum collection.
 - Results rely on metadata rather than direct examination of museum objects.
+- Re-running the notebook with a freshly downloaded MetObjects.csv from the Metropolitan Museum Open Access repository may produce slightly different results than documented here (for example, different Department Analysis numbers), since the museum periodically updates its dataset. For exact reproducibility of the results reported in this README, use the already-committed `Data/french_heritage_objects.csv` rather than re-downloading and re-filtering the source data.
 
 ## Future Work
 
