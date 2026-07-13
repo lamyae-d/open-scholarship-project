@@ -2,65 +2,55 @@
 
 ## Project Overview
 
-This project investigates the representation of French artistic heritage within the Metropolitan Museum of Art Open Access collection. Using museum metadata and digital humanities methods, the project explores how French artistic heritage is documented, classified, collected, and represented across museum departments, object classifications, artist nationalities, and acquisition periods.
+This project investigates the representation of French artistic heritage within the Metropolitan Museum of Art Open Access collection. Using museum metadata and digital humanities methods, the project explores how French cultural heritage is documented, classified, collected, and represented across different museum departments, object classifications, artist nationalities, and acquisition periods.
 
-The project was developed as part of the course *Open Scholarship in History and the Humanities: Resources, Tools, and Methods for Research Implementation*. It follows principles of open, transparent, and reproducible research using Python, Jupyter Notebook, and GitHub.
+The project was developed as part of the course *Open Scholarship in History and the Humanities: Resources, Tools, and Methods for Research Implementation* and follows principles of open, transparent, and reproducible research using Python, Jupyter Notebook, and GitHub.
+
 
 ## Research Question
 
+### Main Research Question
+
 What aspects of French artistic heritage are most prominently represented in the Metropolitan Museum of Art collection?
 
-## Visualizations
-Department Distribution
-![](./notebooks/department_distribution.png)
+### Sub-Questions
 
-Classification Distribution
-![](./notebooks/classification_distribution.png)
+* Which museum departments contain the largest number of French heritage objects?
+* Which object classifications are most frequently associated with French heritage?
+* How is French heritage represented through Culture and Artist Nationality?
+* During which periods were French heritage objects most actively acquired?
+* What patterns of representation can be identified through museum metadata?
 
-Culture and Artist Comparison
-![](./notebooks/culture_artist_comparison.png)
 
-French Heritage Identification
-![](./notebooks/french_heritage_identification.png)
-
-Accession Year Analysis
-
-![](./notebooks/accession_year_analysis.png)
-The visualisations were designed to answer different aspects of the research question.
-
-Department Distribution of French Heritage Objects – identifies the museum departments in which French heritage is most strongly represented.
-
-Classification Distribution of French Heritage Objects – identifies the most common object types associated with French heritage.
-
-French Heritage Identification (Culture vs Artist Nationality) – compares metadata fields used to identify French heritage objects.
-
-Culture and Artist Nationality Comparison – examines the relative representation of French heritage through cultural classification and artist nationality metadata.
-
-Accession Year Analysis – explores patterns in the acquisition of French heritage objects over time.
-
-Together, these visualisations provide insight into where French heritage is represented, how it is classified, how it is identified through metadata, and when objects entered the museum collection.
 ## Open Scholarship and Licensing
 
-This project uses the Metropolitan Museum of Art Open Access Dataset.
+This project uses the Metropolitan Museum of Art Open Access Dataset as an example of open cultural heritage data.
 
 Dataset Repository:
 
 https://github.com/metmuseum/openaccess
 
-The dataset is distributed under the CC0 (Creative Commons Zero) licence, allowing unrestricted reuse of metadata.
+The dataset is distributed under the CC0 (Creative Commons Zero) license, allowing unrestricted reuse of metadata. Licensing information was verified through the official Metropolitan Museum Open Access repository before the dataset was downloaded and analysed.
+
+The project promotes transparency, accessibility, and reproducibility by documenting all analytical steps through GitHub and Jupyter Notebook.
 
 ## Dataset
 
-### Sources
+## Dataset
+
+### Source
 
 Metropolitan Museum of Art Open Access Dataset (MetObjects.csv)
 
-- Metropolitan Museum of Art Open Access Dataset:
-  https://github.com/metmuseum/openaccess
+### Dataset Description
 
-- Metropolitan Museum of Art Open Access Initiative:
-  https://www.metmuseum.org/about-the-met/policies-and-documents/open-access
+The Metropolitan Museum of Art Open Access dataset contains publicly available metadata for hundreds of thousands of museum objects. The metadata includes information about artists, cultures, departments, classifications, historical periods, and acquisition history.
+
+The dataset was downloaded as a CSV file and analysed using Python and Jupyter Notebook.
+
 ### Selected Metadata Variables
+
+The following metadata fields were selected for analysis:
 
 * Culture
 * Artist Nationality
@@ -72,9 +62,13 @@ Metropolitan Museum of Art Open Access Dataset (MetObjects.csv)
 * Period
 * Dynasty
 
+These variables were selected because they directly contribute to answering the research question.
+
 These variables were selected because they contribute directly to answering the research question.
 
 ## Workflow
+
+The project follows a reproducible workflow:
 
 1. Data collection from the Metropolitan Museum Open Access repository.
 2. Loading the dataset into Jupyter Notebook using pandas.
@@ -87,11 +81,6 @@ These variables were selected because they contribute directly to answering the 
 9. Interpretation of results.
 10. Documentation and publication through GitHub.
 
-## Analytic Approach
-
-This project follows an exploratory data analysis approach. After selecting relevant metadata variables, records associated with French artistic heritage were identified through cultural and nationality-related metadata.
-
-Frequency distributions, comparisons, and visualisations were used to investigate patterns of representation across museum departments, object classifications, artist nationalities, and acquisition history.
 
 ## Tools and Libraries
 
@@ -106,11 +95,8 @@ Frequency distributions, comparisons, and visualisations were used to investigat
 | Microsoft Excel  | Initial data inspection                         |
 
 
+
 ## Key Findings
-
-### Key Functions Used
-
-The analysis primarily relies on pandas functions such as read_csv(), value_counts(), filtering operations, and missing value inspection to explore and prepare the dataset. Matplotlib was used to create visualisations of department distributions, classification distributions, metadata comparisons, and accession year patterns. These functions enabled the identification and interpretation of trends within the museum metadata.
 
 ### Department Analysis
 
@@ -143,57 +129,19 @@ French heritage is represented through both cultural classification and artist n
 
 The accession year analysis reveals several acquisition peaks rather than a continuous collecting pattern. This indicates periods during which French heritage objects entered the collection at particularly high rates.
 
+
+
 ## FAIR Principles
 
 This project follows the FAIR principles for research data:
 
-**Findable** – The dataset is publicly available through the Metropolitan Museum Open Access repository.
-
-**Accessible** – The dataset can be freely downloaded and accessed by researchers.
-
-**Interoperable** – Metadata is provided in a structured CSV format that can be used across different software environments.
-
-**Reusable** – Open licensing and detailed workflow documentation support future reuse.
-
-## Peer Review and Testing
-
-The repository and Jupyter Notebook were reviewed from the perspective of a new user to evaluate the clarity of documentation, workflow transparency, and reproducibility. Particular attention was given to whether the research question, data source, analytical workflow, and visualisations could be understood without additional explanation.
-
-The review confirmed that the workflow can be followed through the README and notebook documentation. The repository structure, code organisation, and visualisations support the reproducibility of the analysis.
-
-## Reproducibility
-
-All stages of the research process are documented within the Jupyter Notebook. The notebook contains the complete workflow, code, visualisations, interpretations, and conclusions necessary to reproduce the analysis.
-
-Version control was maintained through GitHub and GitHub Desktop to ensure transparency and traceability of project development.
+* **Findable:** The dataset is publicly available through the Metropolitan Museum Open Access repository.
+* **Accessible:** The dataset can be freely downloaded and accessed by researchers.
+* **Interoperable:** Metadata is provided in a structured CSV format that can be used across different software environments.
+* **Reusable:** Open licensing and detailed workflow documentation support future reuse.
 
 
-## Repository Structure
 
-open-scholarship-project/
-│
-├── Data/
-│
-├── notebooks/
-│   ├── figures/
-│   │   ├── accession_year_analysis.png
-│   │   ├── classification_distribution.png
-│   │   ├── culture_artist_comparison.png
-│   │   ├── department_distribution.png
-│   │   └── french_heritage_identification.png
-│   │
-│   └── heritage_data_analysis.ipynb
-│
-└── README.md
-
-
-## Documentation Decisions
-
-Several documentation decisions were made during the project to improve transparency and reproducibility. The workflow, analytical steps, interpretations, and visualisations were documented directly within the Jupyter Notebook. Repository organisation and version control were maintained through GitHub and GitHub Desktop to support traceability and future reuse of the project.
-
-## AI-Assisted Development
-
-ChatGPT was used as a supplementary learning and troubleshooting tool during the development of this project, particularly for Python programming, GitHub workflow, and documentation support.
 ## Limitations
 
 Several limitations should be considered when interpreting the results:
@@ -204,6 +152,8 @@ Several limitations should be considered when interpreting the results:
 * The analysis is limited to objects contained within the Metropolitan Museum collection.
 * Results rely on metadata rather than direct examination of museum objects.
 
+
+
 ## Future Work
 
 Potential extensions of this project include:
@@ -213,6 +163,27 @@ Potential extensions of this project include:
 * Analysis of artistic movements and historical periods.
 * Comparative studies of multiple cultural groups.
 * Interactive visualisations for public exploration.
+
+
+## Repository Structure
+
+text
+project/
+│
+├── Data/
+│   └── MetObjects.csv
+│
+├── heritage_data_analysis.ipynb
+│
+└── README.md
+
+
+## Reproducibility
+
+All stages of the research process are documented within the Jupyter Notebook. The notebook contains the complete workflow, code, visualisations, interpretations, and conclusions necessary to reproduce the analysis.
+
+Version control was maintained through GitHub and GitHub Desktop to ensure transparency and traceability of project development.
+
 
 ## Conclusion
 
