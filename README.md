@@ -98,6 +98,15 @@ This project follows the FAIR principles for research data:
 
 **Reusable** – Open licensing and detailed workflow documentation support future reuse.
 
+## CARE Principles
+
+The CARE principles are considered as an ethical framework for responsible use of cultural heritage data:
+
+- **Collective Benefit:** The project supports public understanding and reuse of openly available museum metadata.
+- **Authority to Control:** The project respects the Metropolitan Museum of Art as the data provider and follows its CC0 Open Access conditions.
+- **Responsibility:** The data source, filtering decisions, workflow, and limitations are documented transparently.
+- **Ethics:** Labels such as Culture and Artist Nationality are institutional metadata categories and do not fully represent complex cultural identities. Missing values and possible cataloguing biases are therefore acknowledged when interpreting the results.
+
 ## Peer Review and Testing
 
 The repository and Jupyter Notebook were reviewed from the perspective of a new user to evaluate the clarity of documentation, workflow transparency, and reproducibility. Particular attention was given to whether the research question, data source, analytical workflow, and visualisations could be understood without additional explanation.
