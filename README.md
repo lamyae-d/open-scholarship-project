@@ -34,13 +34,15 @@ The dataset is distributed under the CC0 (Creative Commons Zero) license, allowi
 
 The project promotes transparency, accessibility, and reproducibility by documenting all analytical steps through GitHub and Jupyter Notebook.
 
-## Dataset
-
-## Dataset
 
 ### Source
 
-Metropolitan Museum of Art Open Access Dataset (MetObjects.csv)
+Metropolitan Museum of Art Open Access Dataset (MetObjects.csv) 
+
+### Processed Dataset
+
+The filtered dataset used in this analysis (French heritage objects only) is available here:
+[Data/french_heritage_objects.csv](https://github.com/lamyae-d/open-scholarship-project/blob/main/Data/french_heritage_objects.csv)
 
 ### Dataset Description
 
@@ -167,13 +169,20 @@ Potential extensions of this project include:
 
 ## Repository Structure
 
-text
-project/
+## Repository Structure
+
+open-scholarship-project/
 │
 ├── Data/
-│   └── MetObjects.csv
+│   └── french_heritage_objects.csv
 │
-├── heritage_data_analysis.ipynb
+├── notebooks/
+│   ├── heritage_data_analysis.ipynb
+│   ├── department_distribution.png
+│   ├── classification_distribution.png
+│   ├── culture_artist_comparison.png
+│   ├── french_heritage_identification.png
+│   └── accession_year_analysis.png
 │
 └── README.md
 
