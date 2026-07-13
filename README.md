@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # French Artistic Heritage in the Metropolitan Museum Collection
 
 ## Project Overview
@@ -28,8 +27,6 @@ The original `MetObjects.csv` file is not included in this repository because it
 | Jupyter Notebook | Combining code, results, and documentation |
 | GitHub and GitHub Desktop | Repository management and version control |
 | Microsoft Excel | Initial data inspection |
-=======
->>>>>>> 78f69e1a9e12e4d5c398ab37666e3a6ebb60e1cf
 
 ## Key Findings
 
