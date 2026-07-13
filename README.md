@@ -3,6 +3,20 @@ ository management                           |
 
 ## Key Findings
 
+## Workflow
+
+The project follows a reproducible workflow:
+
+1. Data collection from the [Metropolitan Museum Open Access repository](https://github.com/metmuseum/openaccess).
+2. Loading the dataset into Jupyter Notebook using pandas.
+3. Initial inspection of dataset structure and metadata.
+4. Missing value analysis.
+5. Selection of relevant metadata variables.
+6. Filtering records related to French artistic heritage, producing the [filtered dataset](https://github.com/lamyae-d/open-scholarship-project/blob/main/Data/french_heritage_objects.csv).
+7. Exploratory data analysis using the [notebook](https://github.com/lamyae-d/open-scholarship-project/blob/main/notebooks/heritage_data_analysis.ipynb).
+8. Creation of visualisations, see [Department Distribution](https://github.com/lamyae-d/open-scholarship-project/blob/main/notebooks/department_distribution.png), [Classification Distribution](https://github.com/lamyae-d/open-scholarship-project/blob/main/notebooks/classification_distribution.png), [Culture and Artist Comparison](https://github.com/lamyae-d/open-scholarship-project/blob/main/notebooks/culture_artist_comparison.png), and [Accession Year Analysis](https://github.com/lamyae-d/open-scholarship-project/blob/main/notebooks/accession_year_analysis.png).
+9. Interpretation of results.
+10. Documentation and publication through GitHub.
 ### Key Functions Used
 
 The analysis primarily relies on pandas functions such as read_csv(), value_counts(), filtering operations, and missing value inspection to explore and prepare the dataset. Matplotlib was used to create visualisations of department distributions, classification distributions, metadata comparisons, and accession year patterns. These functions enabled the identification and interpretation of trends within the museum metadata.
