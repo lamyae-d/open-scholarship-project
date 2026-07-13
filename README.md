@@ -15,8 +15,8 @@ The project follows a reproducible workflow:
 
 1. Data collection from the [Metropolitan Museum Open Access repository](https://github.com/metmuseum/openaccess).
 2. Loading the dataset into Jupyter Notebook using pandas.
-3. Initial inspection of dataset structure and metadata.
-4. Missing value analysis.
+3. Initial inspection of dataset structure and metadata using `df.shape` and `df.head()`. The dataset contains 484,956 rows and 54 columns.
+4. Missing value analysis using `df.isnull().sum()` to identify columns with incomplete data.
 5. Selection of relevant metadata variables.
 6. Filtering records related to French artistic heritage, producing the [filtered dataset](https://github.com/lamyae-d/open-scholarship-project/blob/main/Data/french_heritage_objects.csv).
 7. Exploratory data analysis using the [notebook](https://github.com/lamyae-d/open-scholarship-project/blob/main/notebooks/heritage_data_analysis.ipynb).
