@@ -2,7 +2,13 @@ ository management                           |
 | Microsoft Excel  | Initial data inspection                         |
 
 ## Key Findings
+### How French Heritage Objects Were Identified
 
+Step 6 above (filtering) selects any record where either the Culture field equals "French" or the Artist Nationality field equals "French":
+
+french_df = df[(df["Culture"] == "French") | (df["Artist Nationality"] == "French")]
+
+This OR condition is why both metadata fields are used together — an object only needs to match one of the two to be included.
 ## Workflow
 
 The project follows a reproducible workflow:
