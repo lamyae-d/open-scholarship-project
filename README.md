@@ -15,6 +15,7 @@ The original data comes from the [Metropolitan Museum of Art Open Access reposit
 The original `MetObjects.csv` file is not included in this repository because it exceeds GitHub’s file-size limit. The filtered data used for this project is available here:
 
 - [Filtered French heritage dataset](https://github.com/lamyae-d/open-scholarship-project/blob/main/Data/french_heritage_objects.csv)
+- [Archived dataset on Zenodo (DOI: 10.5281/zenodo.21347584)](https://doi.org/10.5281/zenodo.21347584)
 - [Jupyter Notebook](https://github.com/lamyae-d/open-scholarship-project/blob/main/notebooks/heritage_data_analysis.ipynb)
 
 ## Tools Used
